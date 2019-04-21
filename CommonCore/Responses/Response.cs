@@ -35,6 +35,29 @@ namespace CommonCore.Responses
         {
         }
 
+        public Response<T> WithException(Exception e)
+        {
+            return this + e;
+        }
+
+        public Response<T> WithResult(T r)
+        {
+            return this + r;
+        }
+
+        public Response<T> UnSuccessful(bool success)
+        {
+            this.Sucess = success;
+            return this;
+        }
+
+        public static Response<T> operator +(Response<T> response, T result)
+        {
+            response.Result = result;
+            response.Sucess = false;
+            return response;
+        }
+
         public static Response<T> operator +(Response<T> response, Exception e)
         {
             response.Exceptions.Add(e);
