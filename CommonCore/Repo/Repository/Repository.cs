@@ -72,6 +72,25 @@ namespace CommonCore.Repo.Repository
             return this;
         }
 
+        public Repository<T> AddRange(IEnumerable<T> range, IComparer<T> comparer, bool save = false)
+        {
+            foreach (var item in range)
+            {
+                T f = GetSet().FirstOrDefault(x => comparer.Compare(x, item) == 1);
+                if (f != null)
+                {
+                    GetSet().Remove(f);
+                    GetSet().Add(item);
+                }
+                else
+                {
+                    GetSet().Add(item);
+                }
+            }
+            if (save) Save();
+            return this;
+        }
+
         public IQueryable<T> GetQuery()
         {
             return _query ?? (_query = _context.Set<T>().AsQueryable<T>());
