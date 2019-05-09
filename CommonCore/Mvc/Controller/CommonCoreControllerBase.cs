@@ -24,7 +24,7 @@ namespace CommonCore.Mvc.Controller
             if (auth.None()) return Unauthorized();
             var service = Container.Resolve<IAuthorizationService>();
 
-            bool authorized = service.Authorize(Request.Headers);
+            bool authorized = service.Authorize(Request.Headers).Result;
             if (!authorized) return Unauthorized();
             return action();
         }

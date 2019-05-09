@@ -1,12 +1,3 @@
-D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csprojAssemblyReference.cache
-D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csproj.CoreCompileInputs.cache
-D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.deps.json
-D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.runtimeconfig.json
-D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.runtimeconfig.dev.json
-D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.dll
-D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.pdb
-D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.dll
-D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.pdb
 C:\Users\MLantz\Documents\PersonalRepos\commoncore\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csprojAssemblyReference.cache
 C:\Users\MLantz\Documents\PersonalRepos\commoncore\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csproj.CoreCompileInputs.cache
 C:\Users\MLantz\Documents\PersonalRepos\commoncore\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.AssemblyInfoInputs.cache
@@ -36,3 +27,12 @@ D:\Repos\DatingAppCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csprojAssem
 D:\Repos\DatingAppCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csproj.CoreCompileInputs.cache
 D:\Repos\DatingAppCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.dll
 D:\Repos\DatingAppCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.pdb
+D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.deps.json
+D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.runtimeconfig.json
+D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.runtimeconfig.dev.json
+D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.dll
+D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.pdb
+D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csproj.CoreCompileInputs.cache
+D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.dll
+D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.pdb
+D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csprojAssemblyReference.cache

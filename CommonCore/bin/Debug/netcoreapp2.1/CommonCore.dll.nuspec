@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Package</id>
+    <id>.\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.dll</id>
     <version>1.0.0</version>
     <authors>matt</authors>
     <owners>matt</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>My    Package description</description>
+    <description>Package description</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>mypackage1 Tag2</tags>
+    <tags>Tag1 Tag2</tags>
     <dependencies>
       <dependency id="SampleDependency" version="1.0" />
     </dependencies>

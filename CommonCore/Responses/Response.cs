@@ -91,6 +91,11 @@ namespace CommonCore.Responses
             return response.Result;
         }
 
+        public static implicit operator bool(Response<T> response)
+        {
+            return response.Sucess;
+        }
+
         public static implicit operator Response<T>(T response)
         {
             return new Response<T>()

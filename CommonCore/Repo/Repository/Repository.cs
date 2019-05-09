@@ -61,7 +61,8 @@ namespace CommonCore.Repo.Repository
                 T f = GetSet().FirstOrDefault(x => x == item);
                 if (f != null)
                 {
-                    f = item;
+                    GetSet().Remove(f);
+                    GetSet().Add(item);
                 }
                 else
                 {
@@ -118,44 +119,6 @@ namespace CommonCore.Repo.Repository
         public static Repository<T> Create()
         {
             return new Repository<T>();
-        }
-
-        public Repository<T> CreateOrUpdate(IEnumerable<T> range, bool save)
-        {
-
-            foreach (var item in range)
-            {
-                T f = GetSet().FirstOrDefault(x => x == item);
-                if (f != null)
-                {
-                    f = item;
-                }
-                else
-                {
-                    GetSet().Add(item);
-                }
-            }
-            if (save) Save();
-            return this;
-        }
-
-        public Repository<T> CreateOrUpdate(IEnumerable<T> range, IComparer<T> comparer, bool save = false)
-        {
-
-            foreach (var item in range)
-            {
-                T f = GetSet().FirstOrDefault(x => comparer.Compare(x, item) == 1);
-                if (f != null)
-                {
-                    f = item;
-                }
-                else
-                {
-                    GetSet().Add(item);
-                }
-            }
-            if (save) Save();
-            return this;
         }
 
         public Repository<T> Remove(T item, bool save = false)
