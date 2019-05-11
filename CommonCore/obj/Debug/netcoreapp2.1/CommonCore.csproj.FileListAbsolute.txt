@@ -35,4 +35,3 @@ D:\Repos\CommonCore\CommonCore\bin\Debug\netcoreapp2.1\CommonCore.pdb
 D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csproj.CoreCompileInputs.cache
 D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.dll
 D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.pdb
-D:\Repos\CommonCore\CommonCore\obj\Debug\netcoreapp2.1\CommonCore.csprojAssemblyReference.cache

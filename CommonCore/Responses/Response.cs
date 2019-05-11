@@ -45,9 +45,15 @@ namespace CommonCore.Responses
             return this + r;
         }
 
-        public Response<T> UnSuccessful(bool success)
+        public Response<T> IsUnSuccessful()
         {
-            this.Sucess = success;
+            this.Sucess = false;
+            return this;
+        }
+
+        public Response<T> IsSuccessful()
+        {
+            this.Sucess = true;
             return this;
         }
 

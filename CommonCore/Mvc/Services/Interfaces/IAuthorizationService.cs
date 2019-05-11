@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using CommonCore.Responses;
 using Microsoft.AspNetCore.Http;
 
-namespace DatingApp.API.Services.Interfaces
+namespace CommonCore.Services.Interfaces
 {
     public interface IAuthorizationService
     {
