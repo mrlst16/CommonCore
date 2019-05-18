@@ -2688,7 +2688,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "CommonCoreByMattyLantz/1.0.4.1": {
+      "CommonCoreByMattyLantz/1.0.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -8237,7 +8237,7 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "CommonCoreByMattyLantz/1.0.4.1": {
+    "CommonCoreByMattyLantz/1.0.5": {
       "type": "project",
       "path": "../CommonCore/CommonCore.csproj",
       "msbuildProject": "../CommonCore/CommonCore.csproj"
@@ -8246,7 +8246,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Autofac.Extensions.DependencyInjection >= 4.4.0",
-      "CommonCoreByMattyLantz >= 1.0.4.1",
+      "CommonCoreByMattyLantz >= 1.0.5",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },

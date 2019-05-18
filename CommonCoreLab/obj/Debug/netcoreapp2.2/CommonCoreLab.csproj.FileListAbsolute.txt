@@ -2,6 +2,7 @@ D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCoreLab.deps.jso
 D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCoreLab.runtimeconfig.json
 D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCoreLab.runtimeconfig.dev.json
 D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCoreLab.dll
+D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCoreLab.pdb
 D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCore.dll
 D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCore.pdb
 D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.csprojAssemblyReference.cache
@@ -9,6 +10,5 @@ D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.csproj.C
 D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.AssemblyInfoInputs.cache
 D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.AssemblyInfo.cs
 D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.csproj.CopyComplete
-D:\Repos\CommonCore\CommonCoreLab\bin\Debug\netcoreapp2.2\CommonCoreLab.pdb
 D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.dll
 D:\Repos\CommonCore\CommonCoreLab\obj\Debug\netcoreapp2.2\CommonCoreLab.pdb

@@ -8,7 +8,6 @@ namespace CommonCore.Responses
 {
     public class Response<T> : IResponse
     {
-
         protected T _result;
         public T Result
         {
@@ -40,7 +39,17 @@ namespace CommonCore.Responses
             return this + e;
         }
 
+        public Response<T> WithExceptions(IEnumerable<Exception> exceptions)
+        {
+            return this + exceptions;
+        }
+
         public Response<T> WithResult(T r)
+        {
+            return this + r;
+        }
+
+        public Response<T> WIthInnerResult(IResponse r)
         {
             return this + r;
         }
@@ -67,6 +76,13 @@ namespace CommonCore.Responses
         public static Response<T> operator +(Response<T> response, Exception e)
         {
             response.Exceptions.Add(e);
+            response.Sucess = false;
+            return response;
+        }
+
+        public static Response<T> operator +(Response<T> response, IEnumerable<Exception> exceptions)
+        {
+            response.Exceptions.AddRange(exceptions);
             response.Sucess = false;
             return response;
         }
