@@ -16,14 +16,24 @@ namespace CommonCore.Repo.Repository
     internal class ContextBag
     {
         internal Type Type;
-        internal DbContext Context;
         internal IEnumerable<string> EntityNames;
         internal Dictionary<string, IRepoAdapter> RepoAdapters = new Dictionary<string, IRepoAdapter>();
     }
 
     public static class RepoCache
     {
-        private static List<ContextBag> ContextBags = new List<ContextBag>();
+        private static List<ContextBag> _contextBags = new List<ContextBag>();
+        private static List<ContextBag> ContextBags
+        {
+            get
+            {
+                var lockObject = new object();
+                lock (lockObject)
+                {
+                    return _contextBags;
+                }
+            }
+        }
 
         public static void Initialize(params Type[] contextTypes)
         {
@@ -31,12 +41,9 @@ namespace CommonCore.Repo.Repository
             {
                 try
                 {
-                    var context = (DbContext)Activator.CreateInstance(contextType);
-
                     ContextBag bag = new ContextBag()
                     {
-                        Context = context,
-                        EntityNames = GetEntityNames(context),
+                        EntityNames = GetEntityNames((DbContext)Activator.CreateInstance(contextType)),
                         Type = contextType
                     };
                     ContextBags.Add(bag);
@@ -49,7 +56,14 @@ namespace CommonCore.Repo.Repository
         }
 
         public static DbContext GetContext(Type type)
-            => ContextBags.FirstOrDefault(x => x.Type == type)?.Context ?? null;
+        {
+            var lockObject = new object();
+            var bag = ContextBags.FirstOrDefault(x => x.Type == type);
+            lock (lockObject)
+            {
+                return (DbContext)Activator.CreateInstance(type);
+            }
+        }
 
         public static IQueryable<T> GetQuery<T>()
             where T : class, IEntity
@@ -68,14 +82,19 @@ namespace CommonCore.Repo.Repository
                 if (contextBag == null)
                     throw new Exception($"Type {key} could not be found in any of the cached contexts");
 
-                if (!contextBag.RepoAdapters.ContainsKey(key))
-                    contextBag.RepoAdapters[key] = new Repository<T>(contextBag.Context);
-                return (Repository<T>)contextBag.RepoAdapters[key];
+                return new Repository<T>((DbContext)Activator.CreateInstance(contextBag.Type));
             }
             catch (Exception e)
             {
                 throw e;
             }
+        }
+
+        public static Repository<T> Create<T, TContext>()
+            where T : class, IEntity
+            where TContext : DbContext, new()
+        {
+            return new Repository<T>(new TContext());
         }
 
         private static IEnumerable<string> GetEntityNames(DbContext dbContext)
