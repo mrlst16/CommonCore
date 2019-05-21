@@ -136,5 +136,14 @@ namespace CommonCore.Repo.Repository
             if (save) Save();
             return this;
         }
+
+        public Repository<T> RemoveRange(Func<T, bool> wherePredicate, bool save = false)
+        {
+            var range = GetQuery().Where(wherePredicate);
+            GetSet().RemoveRange(range);
+
+            if (save) Save();
+            return this;
+        }
     }
 }

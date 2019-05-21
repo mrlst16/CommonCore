@@ -15,6 +15,7 @@ namespace CommonCore.Repo.Repository
         TRepo Remove(T item, bool save);
         TRepo AddRange(IEnumerable<T> range, bool save);
         TRepo RemoveRange(IEnumerable<T> range, bool save);
+        TRepo RemoveRange(Func<T, bool> wherePredicate, bool save = false);
         IQueryable<T> GetQuery();
         TRepo Save();
     }
