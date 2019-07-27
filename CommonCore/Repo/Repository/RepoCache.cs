@@ -17,7 +17,7 @@ namespace CommonCore.Repo.Repository
     {
         internal Type Type;
         internal IEnumerable<string> EntityNames;
-        internal Dictionary<string, IRepoAdapter> RepoAdapters = new Dictionary<string, IRepoAdapter>();
+        internal Dictionary<string, IRepo> RepoAdapters = new Dictionary<string, IRepo>();
     }
 
     public static class RepoCache

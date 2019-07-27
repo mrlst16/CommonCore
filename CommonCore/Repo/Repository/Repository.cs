@@ -8,16 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CommonCore.Repo.Repository
 {
-    public class Repository<T> : IRepository<T, Repository<T>>, IRepoAdapter
+    public class Repository<T> : IRepository<T, Repository<T>>, IRepo
         where T : class
     {
         protected DbContext _context { get; set; }
         protected DbSet<T> _set;
         protected IQueryable<T> _query;
-
-        Repository()
-        {
-        }
 
         public Repository(DbContext context)
         {
@@ -115,12 +111,6 @@ namespace CommonCore.Repo.Repository
             return _set ?? (_set = _context.Set<T>());
         }
 
-
-        public static Repository<T> Create()
-        {
-            return new Repository<T>();
-        }
-
         public Repository<T> Remove(T item, bool save = false)
         {
             GetSet().Remove(item);
@@ -144,6 +134,18 @@ namespace CommonCore.Repo.Repository
 
             if (save) Save();
             return this;
+        }
+
+        public DbSet<T> Set()
+        {
+            return _context.Set<T>();
+        }
+
+        public IRepository<G, GRepo> Spawn<G, GRepo>()
+            where G : class
+            where GRepo : IRepository<G, GRepo>
+        {
+            return (IRepository<G, GRepo>)new Repository<G>(_context);
         }
     }
 }
