@@ -1,40 +1,93 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj": {}
+    "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj": {
+    "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj",
-        "projectName": "CommonCoreLab",
-        "projectPath": "D:\\Repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj",
-        "packagesPath": "C:\\Users\\matt\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\CommonCore\\CommonCoreLab\\obj\\",
+        "projectUniqueName": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj",
+        "projectName": "CommonCore.Interfaces",
+        "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\mattl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mattl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\matt\\Source\\Repos\\Balls\\Balls\\bin\\Debug": {},
-          "C:\\Users\\matt\\Source\\Repos\\NugetLab\\NugetLab\\bin\\Debug": {},
-          "D:\\Repos\\CommonCore\\CommonCore\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj",
+        "projectName": "CommonCoreLab",
+        "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj",
+        "packagesPath": "C:\\Users\\mattl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCoreLab\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mattl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Repos\\CommonCore\\CommonCore\\CommonCore.csproj": {
-                "projectPath": "D:\\Repos\\CommonCore\\CommonCore\\CommonCore.csproj"
+              "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj": {
+                "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj"
               }
             }
           }
@@ -46,56 +99,71 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[4.4.0, )"
             },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
+            "MongoDB.Bson": {
               "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[2.11.4, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.4, )"
+            },
+            "MongoDB.Driver.Core": {
+              "target": "Package",
+              "version": "[2.11.4, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Repos\\CommonCore\\CommonCore\\CommonCore.csproj": {
+    "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj": {
       "version": "1.0.6",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\CommonCore\\CommonCore\\CommonCore.csproj",
+        "projectUniqueName": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj",
         "projectName": "CommonCoreByMattyLantz",
-        "projectPath": "D:\\Repos\\CommonCore\\CommonCore\\CommonCore.csproj",
-        "packagesPath": "C:\\Users\\matt\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\CommonCore\\CommonCore\\obj\\",
+        "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj",
+        "packagesPath": "C:\\Users\\mattl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mattl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\matt\\Source\\Repos\\Balls\\Balls\\bin\\Debug": {},
-          "C:\\Users\\matt\\Source\\Repos\\NugetLab\\NugetLab\\bin\\Debug": {},
-          "D:\\Repos\\CommonCore\\CommonCore\\bin\\Debug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
-            "projectReferences": {}
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -105,7 +173,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Autofac": {
               "target": "Package",
@@ -123,18 +191,27 @@
               "target": "Package",
               "version": "[2.2.4, )"
             },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
+            "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
+              "version": "[2.11.4, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

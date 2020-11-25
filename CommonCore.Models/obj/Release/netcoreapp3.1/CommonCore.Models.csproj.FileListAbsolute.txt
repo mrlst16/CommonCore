@@ -1,0 +1,9 @@
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Release\netcoreapp3.1\CommonCore.Models.deps.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Release\netcoreapp3.1\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Release\netcoreapp3.1\CommonCore.Models.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Release\netcoreapp3.1\CommonCore.Models.csprojAssemblyReference.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Release\netcoreapp3.1\CommonCore.Models.AssemblyInfoInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Release\netcoreapp3.1\CommonCore.Models.AssemblyInfo.cs
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Release\netcoreapp3.1\CommonCore.Models.csproj.CoreCompileInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Release\netcoreapp3.1\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Release\netcoreapp3.1\CommonCore.Models.pdb

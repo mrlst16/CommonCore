@@ -5,6 +5,10 @@ using CommonCoreLab.Services;
 using CommonCoreLab.Services.Interfaces;
 using System;
 using System.Reflection;
+using MongoDB.Driver;
+using System.Linq;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace CommonCoreLab
 {
@@ -64,45 +68,32 @@ namespace CommonCoreLab
         }
     }
 
-    //class LoggingWrapper<T> : DispatchProxy
-    //{
-
-    //    public LoggingWrapper(T decorated)
-    //    {
-
-    //    }
-
-    //    protected override object Invoke(MethodInfo targetMethod, object[] args)
-    //    {
-    //        return null;
-    //    }
-
-
-    //}
+    [BsonIgnoreExtraElements]
+    public class Person
+    {
+        public string Name { get; set; }
+    }
 
     class Program
     {
         static void Main(string[] args)
         {
-            //Setup
-            //ContainerBuilder builder = new ContainerBuilder();
-            //builder.RegisterType<GoldenRetriver>().As<IDog>();
-            //builder.RegisterType<KibblesNBits>().As<ITreat>();
-            //var container = builder.Build();
-            //KeyedDependencyResolver.InitDefault(new AutofacServiceProvider(container.BeginLifetimeScope()));
+            Person bill = new Person()
+            {
+                Name = "Bill"
+            };
 
-            //var builder2 = new ContainerBuilder();
-            //builder2.RegisterType<MintyTreat>().As<ITreat>();
-            //var container2 = builder2.Build();
+            var constr = "mongodb://localhost:27017";
+            var mongoUrl = MongoUrl.Create(constr);
+            var client = new MongoClient(mongoUrl);
 
-            //KeyedDependencyResolver.AddServiceProvider(new AutofacServiceProvider(container2.BeginLifetimeScope()), "puppies");
+            var db = client.GetDatabase("dac");
+            var collection = db.GetCollection<Person>("Person");
+            //collection.InsertOne(bill);
 
-            ////Resolves Default
-            //IDog dog = KeyedDependencyResolver.Instance.GetService<IDog>();
-            //Console.WriteLine(dog.Speak());
+            var b = collection.Find(x => true);
+            var bList = b.ToList();
 
-
-            
         }
     }
 }

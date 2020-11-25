@@ -19,5 +19,8 @@ namespace CommonCore.Comparers
         {
             return _func(x, y) ? 1 : 0;
         }
+
+        public static implicit operator ComparerFunc<T>(Func<T, T, bool> func)
+            => new ComparerFunc<T>(func);
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.deps.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.runtimeconfig.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.runtimeconfig.dev.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore\obj\Debug\netcoreapp3.1\CommonCore.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore\obj\Debug\netcoreapp3.1\CommonCore.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore\obj\Debug\netcoreapp3.1\CommonCore.genruntimeconfig.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore\obj\Debug\netcoreapp3.1\CommonCore.csprojAssemblyReference.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.Interfaces.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore\bin\Debug\netcoreapp3.1\CommonCore.Interfaces.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore\obj\Debug\netcoreapp3.1\CommonCore.csproj.CopyComplete
+C:\Users\mattl\source\repos\CommonCore\CommonCore\obj\Debug\netcoreapp3.1\CommonCore.csproj.CoreCompileInputs.cache
