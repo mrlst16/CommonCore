@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "olXvx2ayK7L4wEROLx8Ov/QvN928UvQGfruMovJvSjr2mV1taK47Rv9kQlgDFsqLUkxdy6hi/TxY3xA6oOdOSw==",
+  "dgSpecHash": "F0BwcYVPmAHAOaNABDEx+00AfmQXqrrzBv7P4j9JKi/kQhXcDvTBbKnfhbZ5e/nTqjgQiu3tGj9GU3cmN9ZpNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCoreLab\\CommonCoreLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mattl\\.nuget\\packages\\autofac\\4.9.2\\autofac.4.9.2.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.4.0\\autofac.extensions.dependencyinjection.4.4.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

@@ -30,7 +30,6 @@ namespace CommonCore.Repo.MongoDb
             await collection.InsertOneAsync(item);
         }
 
-
         public async Task Create(IEnumerable<T> items)
         {
             var collection = GetCollection<T>();
@@ -47,7 +46,7 @@ namespace CommonCore.Repo.MongoDb
         public async Task<(bool, T)> Update(T item, Expression<Func<T, bool>> filter)
         {
             var collection = GetCollection<T>();
-            var updateResult = collection.ReplaceOne<T>(filter, item);
+            var updateResult = await collection.ReplaceOneAsync<T>(filter, item);
             return (updateResult.IsAcknowledged, item);
         }
 
@@ -61,7 +60,7 @@ namespace CommonCore.Repo.MongoDb
         public async Task<bool> DeleteBulk(Expression<Func<T, bool>> filter)
         {
             var collection = GetCollection<T>();
-            var deleteResult = await collection.DeleteOneAsync<T>(filter);
+            var deleteResult = await collection.DeleteManyAsync<T>(filter);
             return deleteResult.IsAcknowledged;
         }
     }

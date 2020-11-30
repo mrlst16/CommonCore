@@ -12,7 +12,7 @@ namespace CommonCore.Utilities
             return new List<Guid>() { one, two }
                 .OrderBy(x => x.GetHashCode())
                 .Select(y => y.ToString().ToLowerInvariant())
-                .Aggregate((a, b) => $"{a.ToLowerInvariant()}_{b.ToLowerInvariant()}");
+                .Aggregate((a, b) => $"{a}_{b}");
         }
 
     }

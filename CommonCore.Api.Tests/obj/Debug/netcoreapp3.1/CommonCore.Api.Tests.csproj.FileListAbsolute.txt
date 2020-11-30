@@ -1,0 +1,12 @@
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\bin\Debug\netcoreapp3.1\CommonCore.Api.Tests.deps.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\bin\Debug\netcoreapp3.1\CommonCore.Api.Tests.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\bin\Debug\netcoreapp3.1\CommonCore.Api.Tests.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\bin\Debug\netcoreapp3.1\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\bin\Debug\netcoreapp3.1\CommonCore.Models.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.csprojAssemblyReference.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.AssemblyInfoInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.AssemblyInfo.cs
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.csproj.CoreCompileInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.csproj.CopyComplete
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Api.Tests\obj\Debug\netcoreapp3.1\CommonCore.Api.Tests.pdb
