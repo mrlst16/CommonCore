@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CommonCore.Mathematics
+namespace CommonCore2.Mathematics
 {
     public class HaversineCalculator
     {

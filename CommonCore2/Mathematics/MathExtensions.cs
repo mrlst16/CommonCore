@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonCore.Mathematics
+namespace CommonCore2.Mathematics
 {
     public static class MathExtensions
     {

@@ -1825,6 +1825,16 @@
           "bin/placeholder/CommonCore.Models.dll": {}
         }
       },
+      "CommonCore2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CommonCore2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonCore2.dll": {}
+        }
+      },
       "CommonCoreByMattyLantz/1.0.6": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6186,6 +6196,11 @@
       "path": "../CommonCore.Models/CommonCore.Models.csproj",
       "msbuildProject": "../CommonCore.Models/CommonCore.Models.csproj"
     },
+    "CommonCore2/1.0.0": {
+      "type": "project",
+      "path": "../CommonCore2/CommonCore2.csproj",
+      "msbuildProject": "../CommonCore2/CommonCore2.csproj"
+    },
     "CommonCoreByMattyLantz/1.0.6": {
       "type": "project",
       "path": "../CommonCore/CommonCore.csproj",
@@ -6194,6 +6209,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CommonCore2 >= 1.0.0",
       "CommonCoreByMattyLantz >= 1.0.6",
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
@@ -6227,6 +6243,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore2\\CommonCore2.csproj": {
+              "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore2\\CommonCore2.csproj"
+            },
             "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj": {
               "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj"
             }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "CommonCore.Tests/1.0.0": {
         "dependencies": {
+          "CommonCore2": "1.0.0",
           "CommonCoreByMattyLantz": "1.0.6",
           "MSTest.TestAdapter": "2.1.0",
           "MSTest.TestFramework": "2.1.0",
@@ -1199,6 +1200,11 @@
           "CommonCore.Models.dll": {}
         }
       },
+      "CommonCore2/1.0.0": {
+        "runtime": {
+          "CommonCore2.dll": {}
+        }
+      },
       "CommonCoreByMattyLantz/1.0.6": {
         "dependencies": {
           "CommonCore.Interfaces": "1.0.0",
@@ -1916,6 +1922,11 @@
       "sha512": ""
     },
     "CommonCore.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonCore2/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

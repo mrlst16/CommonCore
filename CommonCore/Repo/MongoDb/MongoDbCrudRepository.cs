@@ -1,4 +1,5 @@
 ﻿using CommonCore.Interfaces.Repository;
+using CommonCore.Models.Repo;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -40,6 +41,17 @@ namespace CommonCore.Repo.MongoDb
         {
             var collection = GetCollection<T>();
             var cursor = await collection.FindAsync<T>(filter);
+            return cursor.ToEnumerable<T>();
+        }
+
+        public async Task<IEnumerable<T>> Read(SearchRequest<T> searchRequest)
+        {
+            var collection = GetCollection<T>();
+            var cursor = await collection.FindAsync<T>(searchRequest.Filter, new FindOptions<T>()
+            {
+                Limit = searchRequest.Limit,
+                Skip = searchRequest.Skip
+            });
             return cursor.ToEnumerable<T>();
         }
 

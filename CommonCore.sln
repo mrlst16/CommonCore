@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Models", "Common
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Interfaces", "CommonCore.Interfaces\CommonCore.Interfaces.csproj", "{EAEC59F0-8767-4516-B92E-E7E094BDBC43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCore.Api", "CommonCore.Api\CommonCore.Api.csproj", "{2382DAE4-B703-42F9-918A-6C668E5D851B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Api", "CommonCore.Api\CommonCore.Api.csproj", "{2382DAE4-B703-42F9-918A-6C668E5D851B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCore.Api.Tests", "CommonCore.Api.Tests\CommonCore.Api.Tests.csproj", "{37EA0673-4670-4195-A713-B2D72BCBC663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Api.Tests", "CommonCore.Api.Tests\CommonCore.Api.Tests.csproj", "{37EA0673-4670-4195-A713-B2D72BCBC663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCore2", "CommonCore2\CommonCore2.csproj", "{499F1B39-856B-41EA-B266-C547A3D579B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{37EA0673-4670-4195-A713-B2D72BCBC663}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37EA0673-4670-4195-A713-B2D72BCBC663}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37EA0673-4670-4195-A713-B2D72BCBC663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499F1B39-856B-41EA-B266-C547A3D579B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499F1B39-856B-41EA-B266-C547A3D579B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499F1B39-856B-41EA-B266-C547A3D579B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499F1B39-856B-41EA-B266-C547A3D579B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

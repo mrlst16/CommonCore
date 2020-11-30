@@ -110,3 +110,5 @@ C:\Users\mattl\source\repos\CommonCore\CommonCore.Tests\obj\Debug\netcoreapp3.1\
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Tests\obj\Debug\netcoreapp3.1\CommonCore.Tests.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Tests\obj\Debug\netcoreapp3.1\CommonCore.Tests.pdb
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Tests\obj\Debug\netcoreapp3.1\CommonCore.Tests.genruntimeconfig.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Tests\bin\Debug\netcoreapp3.1\CommonCore2.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Tests\bin\Debug\netcoreapp3.1\CommonCore2.pdb

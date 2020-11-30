@@ -1,4 +1,4 @@
-﻿using CommonCore.Mathematics;
+﻿using CommonCore2.Mathematics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
