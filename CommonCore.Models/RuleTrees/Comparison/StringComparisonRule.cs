@@ -16,6 +16,7 @@ namespace CommonCore.Models.RuleTrees.Comparison
                 case CommonCore.Models.Enums.ComparisonOperatorEnum.LessThanOrEqualTo:
                 case CommonCore.Models.Enums.ComparisonOperatorEnum.GreaterThanOrEqualTo:
                 case CommonCore.Models.Enums.ComparisonOperatorEnum.GreaterThan:
+                    throw new System.Exception(NonApplicableOperatorMessage);
                 case CommonCore.Models.Enums.ComparisonOperatorEnum.EqualTo:
                     result = OwnValue == ComparisonValue;
                     break;

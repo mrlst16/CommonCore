@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonCore.Models.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,22 +11,22 @@ namespace CommonCore.Models.RuleTrees.Comparison
     {
         public async override Task<bool> Passes()
         {
-            var value = OwnValue.CompareTo(ComparisonValue);
-
             switch (Operator)
             {
                 case Enums.ComparisonOperatorEnum.LessThan:
-                    return value < 0;
+                    return OwnValue.IsLessThan<T2>(ComparisonValue);
                 case Enums.ComparisonOperatorEnum.LessThanOrEqualTo:
-                    return value < 0 || value == 0;
+                    return OwnValue.IsLessThanOrEqualTo<T2>(ComparisonValue);
                 case Enums.ComparisonOperatorEnum.EqualTo:
-                    return value == 0;
+                    return OwnValue.IsEqualTo<T2>(ComparisonValue);
                 case Enums.ComparisonOperatorEnum.GreaterThanOrEqualTo:
-                    return value > 0 || value == 0;
+                    return OwnValue.IsGreaterThanOrEqualTo<T2>(ComparisonValue);
                 case Enums.ComparisonOperatorEnum.GreaterThan:
-                    return value > 0;
+                    return OwnValue.IsGreaterThan<T2>(ComparisonValue);
+                case Enums.ComparisonOperatorEnum.NotEqualTo:
+                    return OwnValue.IsNotEqualTo<T2>(ComparisonValue);
                 default:
-                    return value == 0;
+                    return OwnValue.IsEqualTo<T2>(ComparisonValue);
             }
         }
     }
