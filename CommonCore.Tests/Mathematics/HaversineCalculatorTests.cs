@@ -1,15 +1,14 @@
 ﻿using CommonCore2.Mathematics;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xunit;
 
 namespace CommonCore.Tests.Mathematics
 {
-    [TestClass]
     public class HaversineCalculatorTests
     {
-        [TestMethod]
+        [Fact]
         public void DegreesRadians_Reciprocity()
         {
             HaversineCalculator calculator = new HaversineCalculator();
@@ -17,10 +16,10 @@ namespace CommonCore.Tests.Mathematics
             double radians = calculator.ToRadians(20);
             double degrees = calculator.ToDegrees(radians);
 
-            Assert.AreEqual(20, degrees);
+            Assert.Equal(20, degrees);
         }
 
-        [TestMethod]
+        [Fact]
         public void HaversineArcHaversine_At0_Reciprocity()
         {
             HaversineCalculator calculator = new HaversineCalculator();
@@ -29,10 +28,10 @@ namespace CommonCore.Tests.Mathematics
             double haversine = calculator.Haversine(radians);
             double actual = calculator.ArcHaversine(haversine);
 
-            Assert.AreEqual(radians, actual);
+            Assert.Equal(radians, actual);
         }
 
-        [TestMethod]
+        [Fact]
         public void HaversineArcHaversine_AtPoint78_Reciprocity()
         {
             HaversineCalculator calculator = new HaversineCalculator();
@@ -41,10 +40,10 @@ namespace CommonCore.Tests.Mathematics
             double haversine = calculator.Haversine(radians);
             double actual = calculator.ArcHaversine(haversine);
 
-            Assert.AreEqual(radians, actual);
+            Assert.Equal(radians, actual);
         }
 
-        [TestMethod]
+        [Fact]
         public void HaversineArcHaversine_At1_Reciprocity()
         {
             HaversineCalculator calculator = new HaversineCalculator();
@@ -53,10 +52,10 @@ namespace CommonCore.Tests.Mathematics
             double haversine = calculator.Haversine(radians);
             double actual = calculator.ArcHaversine(haversine);
 
-            Assert.AreEqual(radians, actual);
+            Assert.Equal(radians, actual);
         }
 
-        [TestMethod]
+        [Fact]
         public void Distance_40s_ShouldBe0()
         {
             double lat1 = 40;
@@ -66,10 +65,10 @@ namespace CommonCore.Tests.Mathematics
 
             HaversineCalculator calculator = new HaversineCalculator();
             var result = calculator.Distance(lat1, lat2, lon1, lon2);
-            Assert.AreEqual(0, result);
+            Assert.Equal(0, result);
         }
 
-        [TestMethod]
+        [Fact]
         public void Distance_4040To6060_ShouldBe2621()
         {
             double lat1 = 40;
@@ -80,10 +79,10 @@ namespace CommonCore.Tests.Mathematics
             HaversineCalculator calculator = new HaversineCalculator();
             var result = calculator.DistanceKm(lat1, lat2, lon1, lon2);
             var actual = Math.Round(result, 0);
-            Assert.AreEqual(2621, actual);
+            Assert.Equal(2621, actual);
         }
 
-        [TestMethod]
+        [Fact]
         public void Distance_Neg40sToPos60s_ShouldBe2621()
         {
             double lat1 = -40;
@@ -94,10 +93,10 @@ namespace CommonCore.Tests.Mathematics
             HaversineCalculator calculator = new HaversineCalculator();
             var result = calculator.DistanceKm(lat1, lat2, lon1, lon2);
             var actual = Math.Round(result, 0);
-            Assert.AreEqual(14294, actual);
+            Assert.Equal(14294, actual);
         }
 
-        [TestMethod]
+        [Fact]
         public void Longitude2Km_4040To6060_ShouldBe60()
         {
             double lat1 = 40;
@@ -110,7 +109,7 @@ namespace CommonCore.Tests.Mathematics
 
             var result = calculator.Longitude2Km(distance, lat1, lat2, lon1);
             var actual = Math.Round(result, 0);
-            Assert.AreEqual(lon2, actual);
+            Assert.Equal(lon2, actual);
         }
 
     }
