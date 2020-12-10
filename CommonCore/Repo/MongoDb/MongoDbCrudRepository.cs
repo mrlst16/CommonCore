@@ -23,7 +23,7 @@ namespace CommonCore.Repo.MongoDb
         }
 
         private IMongoCollection<T> GetCollection<T>()
-            => _database.GetCollection<T>(nameof(T));
+            => _database.GetCollection<T>(typeof(T).Name);
 
         public async Task Create(T item)
         {

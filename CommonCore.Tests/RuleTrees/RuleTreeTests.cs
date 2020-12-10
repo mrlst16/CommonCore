@@ -1,5 +1,5 @@
-﻿using CommonCore.Models.RuleTrees;
-using CommonCore.Models.RuleTrees.Comparison;
+﻿using CommonCore2.RuleTrees;
+using CommonCore2.RuleTrees.Comparison;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,8 +19,8 @@ namespace CommonCore.Tests.RuleTrees
                 {
                     Children = new List<RuleNode>()
                     {
-                        new StringComparisonRule("Joe", "Joe"),
-                        new StringComparisonRule("Dog", "Dog")
+                        new GenericComparisonRule<string>("Joe", "Joe"),
+                        new GenericComparisonRule<string>("Dog", "Dog")
                     }
                 }
             };
@@ -37,8 +37,8 @@ namespace CommonCore.Tests.RuleTrees
                 {
                     Children = new List<RuleNode>()
                     {
-                        new StringComparisonRule("Joe", "Joe"),
-                        new StringComparisonRule("Dog", "Dogs")
+                        new GenericComparisonRule<string>("Joe", "Joe"),
+                        new GenericComparisonRule<string>("Dog", "Dogs")
                     }
                 }
             };
@@ -55,8 +55,8 @@ namespace CommonCore.Tests.RuleTrees
                 {
                     Children = new List<RuleNode>()
                     {
-                        new StringComparisonRule("Joe", "Joe"),
-                        new StringComparisonRule("Dog", "Dogs")
+                        new GenericComparisonRule<string>("Joe", "Joe"),
+                        new GenericComparisonRule<string>("Dog", "Dogs")
                     }
                 }
             };
@@ -73,8 +73,8 @@ namespace CommonCore.Tests.RuleTrees
                 {
                     Children = new List<RuleNode>()
                     {
-                        new StringComparisonRule("Joes", "Joe"),
-                        new StringComparisonRule("Dog", "Dogs")
+                        new GenericComparisonRule<string>("Joes", "Joe"),
+                        new GenericComparisonRule<string>("Dog", "Dogs")
                     }
                 }
             };

@@ -5,7 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="RuleTrees\Comparison\IntComparisonRule.cs" />
+    <Compile Remove="RuleTrees\Comparison\StringComparisonRule.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonCore.Interfaces\CommonCore.Interfaces.csproj" />
+    <ProjectReference Include="..\CommonCore.Models\CommonCore.Models.csproj" />
   </ItemGroup>
 
 </Project>

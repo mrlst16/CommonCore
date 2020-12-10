@@ -93,6 +93,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.11.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -216,7 +222,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj"
+              },
+              "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj": {
+                "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

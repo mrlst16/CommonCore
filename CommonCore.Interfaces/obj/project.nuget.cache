@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PSLHl/YvK1k5qKH1Z6/Q6KV1B4yGmCEO5ATt3t++bb6k11nf/GRS7yE61O0fwr46j8tsuU7bMnA+ezM2A4PmPQ==",
+  "dgSpecHash": "xgMiTDYZXX0v9bDJAGZqx1Vx387pSIQtccabcNnFE504U757pQTm5gVSrrNS/KffF2GIGiF6GCr/SKz0A5BHRw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mattl\\.nuget\\packages\\mongodb.bson\\2.11.5\\mongodb.bson.2.11.5.nupkg.sha512"
+  ],
   "logs": []
 }

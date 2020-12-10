@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dcvnb5Kl90X9HNCiLUdbYej8s+A1pWiCnBOg6HiRoNsuE90oAlkEIUNCB9ObeFK65iw+1WHMtPjeZihFc4Y22g==",
+  "dgSpecHash": "5gS1eTrN3O6AdQwWL+q4NYNBUlq97vhDcaVUjfqZpfGy0njamtYuh3hTz7nLDQCWN5ugBFs0rSKIWRbfqi1GNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\mattl\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\mattl\\.nuget\\packages\\mongodb.bson\\2.11.4\\mongodb.bson.2.11.4.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\mongodb.bson\\2.11.5\\mongodb.bson.2.11.5.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\mongodb.driver\\2.11.4\\mongodb.driver.2.11.4.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\mongodb.driver.core\\2.11.4\\mongodb.driver.core.2.11.4.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\mongodb.libmongocrypt\\1.0.0\\mongodb.libmongocrypt.1.0.0.nupkg.sha512",

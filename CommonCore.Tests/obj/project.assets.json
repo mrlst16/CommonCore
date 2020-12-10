@@ -386,7 +386,7 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MongoDB.Bson/2.11.4": {
+      "MongoDB.Bson/2.11.5": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/MongoDB.Bson.dll": {}
@@ -1832,6 +1832,9 @@
       "CommonCore.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MongoDB.Bson": "2.11.5"
+        },
         "compile": {
           "bin/placeholder/CommonCore.Models.dll": {}
         },
@@ -1842,6 +1845,10 @@
       "CommonCore2/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CommonCore.Interfaces": "1.0.0",
+          "CommonCore.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CommonCore2.dll": {}
         },
@@ -2392,10 +2399,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MongoDB.Bson/2.11.4": {
-      "sha512": "4i/c7Qq4ov2r1Z9yMigcQNLVukJDuMJclKiHLGPx6fpV0c8/A/WMsRDQJv3NeEhkKbFXamxFmRPKv1ztw0u3cA==",
+    "MongoDB.Bson/2.11.5": {
+      "sha512": "OWsEN7ktxFKcynAMdv08TE5wkL1kkyWJUv+zhO3H3HcK+S4AU52AnxoyVmVSdPk5OWYoTtzbeCOIdmZV2dk5zg==",
       "type": "package",
-      "path": "mongodb.bson/2.11.4",
+      "path": "mongodb.bson/2.11.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2406,7 +2413,7 @@
         "lib/netstandard1.5/MongoDB.Bson.xml",
         "lib/netstandard2.0/MongoDB.Bson.dll",
         "lib/netstandard2.0/MongoDB.Bson.xml",
-        "mongodb.bson.2.11.4.nupkg.sha512",
+        "mongodb.bson.2.11.5.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]

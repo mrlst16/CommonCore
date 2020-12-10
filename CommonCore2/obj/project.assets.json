@@ -1,11 +1,80 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "MongoDB.Bson/2.11.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MongoDB.Bson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MongoDB.Bson.dll": {}
+        }
+      },
+      "CommonCore.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CommonCore.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommonCore.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonCore.Interfaces.dll": {}
+        }
+      },
+      "CommonCore.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MongoDB.Bson": "2.11.5"
+        },
+        "compile": {
+          "bin/placeholder/CommonCore.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonCore.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MongoDB.Bson/2.11.5": {
+      "sha512": "OWsEN7ktxFKcynAMdv08TE5wkL1kkyWJUv+zhO3H3HcK+S4AU52AnxoyVmVSdPk5OWYoTtzbeCOIdmZV2dk5zg==",
+      "type": "package",
+      "path": "mongodb.bson/2.11.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "lib/net452/MongoDB.Bson.dll",
+        "lib/net452/MongoDB.Bson.xml",
+        "lib/netstandard1.5/MongoDB.Bson.dll",
+        "lib/netstandard1.5/MongoDB.Bson.xml",
+        "lib/netstandard2.0/MongoDB.Bson.dll",
+        "lib/netstandard2.0/MongoDB.Bson.xml",
+        "mongodb.bson.2.11.5.nupkg.sha512",
+        "mongodb.bson.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "CommonCore.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../CommonCore.Interfaces/CommonCore.Interfaces.csproj",
+      "msbuildProject": "../CommonCore.Interfaces/CommonCore.Interfaces.csproj"
+    },
+    "CommonCore.Models/1.0.0": {
+      "type": "project",
+      "path": "../CommonCore.Models/CommonCore.Models.csproj",
+      "msbuildProject": "../CommonCore.Models/CommonCore.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "CommonCore.Interfaces >= 1.0.0",
+      "CommonCore.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mattl\\.nuget\\packages\\": {}
@@ -32,7 +101,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Interfaces\\CommonCore.Interfaces.csproj"
+            },
+            "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj": {
+              "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -7,3 +7,8 @@ C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\netcoreapp3.1\Commo
 C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\netcoreapp3.1\CommonCore2.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\netcoreapp3.1\CommonCore2.pdb
 C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\netcoreapp3.1\CommonCore2.csprojAssemblyReference.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\bin\Debug\netcoreapp3.1\CommonCore.Interfaces.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\bin\Debug\netcoreapp3.1\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\bin\Debug\netcoreapp3.1\CommonCore.Interfaces.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\bin\Debug\netcoreapp3.1\CommonCore.Models.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\netcoreapp3.1\CommonCore2.csproj.CopyComplete
