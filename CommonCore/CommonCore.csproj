@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon />
     <StartupObject />
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -18,6 +18,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CommonCore.Interfaces\CommonCore.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

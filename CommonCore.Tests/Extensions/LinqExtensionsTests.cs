@@ -1,4 +1,4 @@
-﻿using CommonCore.Extensions;
+﻿using CommonCore2.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Text;

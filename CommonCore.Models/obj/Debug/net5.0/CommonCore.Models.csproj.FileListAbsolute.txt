@@ -1,0 +1,11 @@
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\net5.0\CommonCore.Models.deps.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\net5.0\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\net5.0\ref\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\net5.0\CommonCore.Models.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\CommonCore.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\CommonCore.Models.AssemblyInfoInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\CommonCore.Models.AssemblyInfo.cs
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\CommonCore.Models.csproj.CoreCompileInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\ref\CommonCore.Models.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\net5.0\CommonCore.Models.pdb

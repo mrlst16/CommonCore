@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28822.285
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore", "CommonCore\CommonCore.csproj", "{714FA9C4-4650-44AF-8A28-FB0C1D597E69}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Tests", "CommonCore.Tests\CommonCore.Tests.csproj", "{71374A06-28B1-4E86-9803-B36DB780BBAC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Models", "CommonCore.Models\CommonCore.Models.csproj", "{1DA086FB-E886-4EF8-9A99-5DB06279ACF2}"
@@ -17,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore.Api.Tests", "Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore2", "CommonCore2\CommonCore2.csproj", "{499F1B39-856B-41EA-B266-C547A3D579B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab", "Lab\Lab.csproj", "{081C4151-D1A2-45D0-AA11-383F95252C6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab", "Lab\Lab.csproj", "{081C4151-D1A2-45D0-AA11-383F95252C6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{714FA9C4-4650-44AF-8A28-FB0C1D597E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{714FA9C4-4650-44AF-8A28-FB0C1D597E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{714FA9C4-4650-44AF-8A28-FB0C1D597E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{714FA9C4-4650-44AF-8A28-FB0C1D597E69}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71374A06-28B1-4E86-9803-B36DB780BBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{71374A06-28B1-4E86-9803-B36DB780BBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71374A06-28B1-4E86-9803-B36DB780BBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU

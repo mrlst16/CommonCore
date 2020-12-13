@@ -1,4 +1,4 @@
-using CommonCore.Extensions;
+using CommonCore2.Extensions;
 using System;
 using Xunit;
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oYsM97BbphDzy6Sk+ye09JFjS/OkGjBAxb3itzc9Y3Y2gLl5zoLRxm6eA62LFHNydXKaIAP6trzDN2nVfb4c6Q==",
+  "dgSpecHash": "TkGF3AQYJ7Lshe3VSoYj+Y/InfbGXlTjneEPBoJP9rAjb2RzrkQfOjza6ZLKL9axDXRm2BzJoeyLwim31MC18g==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\Lab\\Lab.csproj",
   "expectedPackageFiles": [
@@ -88,8 +88,7 @@
     "C:\\Users\\mattl\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\mattl\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\mattl\\.nuget\\packages\\commoncorebymattylantz\\1.0.6\\commoncorebymattylantz.1.0.6.nupkg.sha512"
+    "C:\\Users\\mattl\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

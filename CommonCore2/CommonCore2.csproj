@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,12 +10,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CommonCore.Interfaces\CommonCore.Interfaces.csproj" />
     <ProjectReference Include="..\CommonCore.Models\CommonCore.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Threading\" />
   </ItemGroup>
 
 </Project>

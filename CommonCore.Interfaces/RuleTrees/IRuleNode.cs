@@ -12,10 +12,4 @@ namespace CommonCore.Interfaces.RuleTrees
         Guid ParentID { get; set; }
         Task<bool> Passes();
     }
-
-    public interface IRuleNode<T> : IRuleNode
-    {
-        new Task<bool> Passes();
-        Task<bool> Passes(T comparrisonValue);
-    }
 }

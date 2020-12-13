@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "DnsClient/1.3.1": {
         "type": "package",
         "compile": {
@@ -14,10 +14,10 @@
       "FluentValidation/9.3.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/net5.0/FluentValidation.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/net5.0/FluentValidation.dll": {}
         }
       },
       "FluentValidation.AspNetCore/9.3.0": {
@@ -27,10 +27,10 @@
           "FluentValidation.DependencyInjectionExtensions": "9.3.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -1359,7 +1359,7 @@
       },
       "CommonCore.Interfaces/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "CommonCore.Models": "1.0.0"
         },
@@ -1372,7 +1372,7 @@
       },
       "CommonCore.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "MongoDB.Bson": "2.11.5"
         },
@@ -1385,31 +1385,17 @@
       },
       "CommonCore2/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "CommonCore.Interfaces": "1.0.0",
-          "CommonCore.Models": "1.0.0"
+          "CommonCore.Models": "1.0.0",
+          "FluentValidation.AspNetCore": "9.3.0"
         },
         "compile": {
           "bin/placeholder/CommonCore2.dll": {}
         },
         "runtime": {
           "bin/placeholder/CommonCore2.dll": {}
-        }
-      },
-      "CommonCoreByMattyLantz/1.0.6": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "CommonCore.Interfaces": "1.0.0",
-          "FluentValidation.AspNetCore": "9.3.0",
-          "MongoDB.Driver": "2.11.4"
-        },
-        "compile": {
-          "bin/placeholder/CommonCoreByMattyLantz.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CommonCoreByMattyLantz.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -4963,18 +4949,12 @@
       "type": "project",
       "path": "../CommonCore2/CommonCore2.csproj",
       "msbuildProject": "../CommonCore2/CommonCore2.csproj"
-    },
-    "CommonCoreByMattyLantz/1.0.6": {
-      "type": "project",
-      "path": "../CommonCore/CommonCore.csproj",
-      "msbuildProject": "../CommonCore/CommonCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "CommonCore.Models >= 1.0.0",
       "CommonCore2 >= 1.0.0",
-      "CommonCoreByMattyLantz >= 1.0.6",
       "MongoDB.Driver >= 2.11.4"
     ]
   },
@@ -4995,23 +4975,21 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
             "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj": {
               "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj"
             },
             "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore2\\CommonCore2.csproj": {
               "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore2\\CommonCore2.csproj"
-            },
-            "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj": {
-              "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore\\CommonCore.csproj"
             }
           }
         }
@@ -5023,7 +5001,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "MongoDB.Driver": {
             "target": "Package",
@@ -5048,7 +5027,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

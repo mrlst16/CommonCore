@@ -5,16 +5,33 @@ using System.Threading.Tasks;
 
 namespace CommonCore2.RuleTrees
 {
-    public class InclusiveRangeSearchParameter<T2> : ComparisonRule<T2>
-        where T2 : IComparable<T2>
+    public class InclusiveRangeSearchParameter : SearchParameterRule
     {
-        public T2 From { get; set; }
-        public T2 To { get; set; }
+        public IComparable From { get; set; }
+        public IComparable To { get; set; }
 
         public async override Task<bool> Passes()
         {
             bool result = false;
-            if (ComparisonValue is T2 comparisonValue)
+            if (ComparisonValue is IComparable comparisonValue)
+            {
+                result = comparisonValue.IsGreaterThanOrEqualTo(From)
+                && comparisonValue.IsLessThanOrEqualTo(To);
+            }
+
+            return result && await RuleTree.PassesAnd(Children);
+        }
+    }
+
+    public class InclusiveRangeSearchParameter<T> : SearchParameterRule
+    {
+        public T From { get; set; }
+        public T To { get; set; }
+
+        public async override Task<bool> Passes()
+        {
+            bool result = false;
+            if (ComparisonValue is IComparable<T> comparisonValue)
             {
                 result = comparisonValue.IsGreaterThanOrEqualTo(From)
                 && comparisonValue.IsLessThanOrEqualTo(To);

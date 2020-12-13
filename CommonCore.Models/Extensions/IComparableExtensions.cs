@@ -72,13 +72,47 @@ namespace CommonCore.Models.Extensions
         }
 
         public static bool IsEqualTo<T>(this IComparable<T> compareThis, T comparedTo)
-            where T : IComparable<T>
         {
             var result = compareThis.CompareTo(comparedTo);
             return result == 0;
         }
 
         public static bool IsNotEqualTo<T>(this IComparable<T> compareThis, T comparedTo)
+        {
+            var result = compareThis.CompareTo(comparedTo);
+            return result != 0;
+        }
+
+        public static bool IsLessThan(this IComparable compareThis, IComparable comparedTo)
+        {
+            return compareThis.CompareTo(comparedTo) < 0;
+        }
+
+        public static bool IsLessThanOrEqualTo(this IComparable compareThis, IComparable comparedTo)
+        {
+            var result = compareThis.CompareTo(comparedTo);
+            return result <= 0;
+        }
+
+        public static bool IsGreaterThan(this IComparable compareThis, IComparable comparedTo)
+        {
+            var result = compareThis.CompareTo(comparedTo);
+            return result > 0;
+        }
+
+        public static bool IsGreaterThanOrEqualTo(this IComparable compareThis, IComparable comparedTo)
+        {
+            var result = compareThis.CompareTo(comparedTo);
+            return result >= 0;
+        }
+
+        public static bool IsEqualTo(this IComparable compareThis, IComparable comparedTo)
+        {
+            var result = compareThis.CompareTo(comparedTo);
+            return result == 0;
+        }
+
+        public static bool IsNotEqualTo(this IComparable compareThis, IComparable comparedTo)
         {
             var result = compareThis.CompareTo(comparedTo);
             return result != 0;

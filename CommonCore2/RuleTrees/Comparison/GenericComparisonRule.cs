@@ -15,7 +15,7 @@ namespace CommonCore2.RuleTrees.Comparison
         {
         }
 
-        public GenericComparisonRule(T2 comparisonValue) : base(comparisonValue)
+        public GenericComparisonRule(T2 ownValue) : base(ownValue)
         {
         }
 
@@ -58,4 +58,57 @@ namespace CommonCore2.RuleTrees.Comparison
                 && await RuleTree.PassesAnd(Children);
         }
     }
+
+    public class GenericComparisonRule : ComparisonRule<IComparable>
+    {
+        public GenericComparisonRule() : base()
+        {
+        }
+
+        public GenericComparisonRule(IComparable ownValue) : base(ownValue)
+        {
+        }
+
+        public GenericComparisonRule(IComparable ownValue, IComparable comparisonValue) : base(ownValue, comparisonValue)
+        {
+        }
+
+        public async override Task<bool> Passes()
+        {
+            bool result = false;
+
+            if (ComparisonValue is IComparable comparisonValue)
+            {
+                switch (Operator)
+                {
+                    case ComparisonOperatorEnum.LessThan:
+                        result = OwnValue.IsLessThan(comparisonValue);
+                        break;
+                    case ComparisonOperatorEnum.LessThanOrEqualTo:
+                        result = OwnValue.IsLessThanOrEqualTo(comparisonValue);
+                        break;
+                    case ComparisonOperatorEnum.EqualTo:
+                        result = OwnValue.IsEqualTo(comparisonValue);
+                        break;
+                    case ComparisonOperatorEnum.GreaterThanOrEqualTo:
+                        result = OwnValue.IsGreaterThanOrEqualTo(comparisonValue);
+                        break;
+                    case ComparisonOperatorEnum.GreaterThan:
+                        result = OwnValue.IsGreaterThan(comparisonValue);
+                        break;
+                    case ComparisonOperatorEnum.NotEqualTo:
+                        result = OwnValue.IsNotEqualTo(comparisonValue);
+                        break;
+                    default:
+                        result = OwnValue.IsEqualTo(comparisonValue);
+                        break;
+                }
+            }
+            return result
+                && await RuleTree.PassesAnd(Children);
+        }
+
+
+    }
+
 }

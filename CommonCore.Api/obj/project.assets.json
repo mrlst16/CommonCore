@@ -1,14 +1,14 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "FluentValidation/9.3.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/net5.0/FluentValidation.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/net5.0/FluentValidation.dll": {}
         }
       },
       "FluentValidation.AspNetCore/9.3.0": {
@@ -18,10 +18,10 @@
           "FluentValidation.DependencyInjectionExtensions": "9.3.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -60,7 +60,7 @@
       },
       "CommonCore.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "MongoDB.Bson": "2.11.5"
         },
@@ -163,7 +163,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "CommonCore.Models >= 1.0.0",
       "FluentValidation.AspNetCore >= 9.3.0"
     ]
@@ -185,14 +185,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
             "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj": {
               "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj"
@@ -207,7 +208,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "FluentValidation.AspNetCore": {
             "target": "Package",
@@ -232,7 +234,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

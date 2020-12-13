@@ -14,9 +14,9 @@ namespace CommonCore2.RuleTrees.Comparison
         {
         }
 
-        protected ComparisonRule(T comparisonValue)
+        protected ComparisonRule(T ownValue)
         {
-            ComparisonValue = comparisonValue;
+            OwnValue = ownValue;
         }
 
         protected ComparisonRule(T ownValue, T comparisonValue)

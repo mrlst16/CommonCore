@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "McljBfJ2vuNqIAvrTDbCoR1YO18zullvN4Go2+k6Z3g+xD0humwCKMbHOx+4BPMrUShU78m5Frvo+Elyxf+OJA==",
+  "dgSpecHash": "KuejsW0zXot6qzVBggJvERU4FosQZGTyadpqOcKaehDTeDsiOpCaT6PplaEVSYWjkdE6ngWJ+TeUsrgroueGxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore2\\CommonCore2.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mattl\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.3.0\\fluentvalidation.aspnetcore.9.3.0.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.3.0\\fluentvalidation.dependencyinjectionextensions.9.3.0.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\mattl\\.nuget\\packages\\mongodb.bson\\2.11.5\\mongodb.bson.2.11.5.nupkg.sha512"
   ],
   "logs": []
