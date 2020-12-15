@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AwJk7kZEY1sbsb9OfF43/5KQWpgb5RqWs8mJIvJ2WN2zO6ibE5cZQKVaxH0Uqrqoa4aFf8sxjdd0Iij84HykNA==",
+  "dgSpecHash": "18ZcxwIrKUlHYeEFvolshUiFMI8IuwrRlUqQJpZPkw/K8R611VMax1JW3gSPGiDW0PC5QDSX7CR6DQmEnWYI5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Api.Tests\\CommonCore.Api.Tests.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\mattl\\.nuget\\packages\\mongodb.bson\\2.11.5\\mongodb.bson.2.11.5.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

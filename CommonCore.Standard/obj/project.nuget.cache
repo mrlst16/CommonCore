@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yDgDEEDG8Pdxf6wfdyw9cMDUyIEIuskvwTfnFpTr5bqTMTYJU8KzjZt9cXSNzxrQ3Fl18B5mHN3GgojAKZ/YZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Standard\\CommonCore.Standard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mattl\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

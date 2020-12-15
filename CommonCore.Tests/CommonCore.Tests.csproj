@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CommonCore.Standard\CommonCore.Standard.csproj" />
     <ProjectReference Include="..\CommonCore2\CommonCore2.csproj" />
   </ItemGroup>
 

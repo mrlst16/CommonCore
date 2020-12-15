@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace CommonCore.Models.Responses
 {
-    public interface IResponse<T>
+    public interface IResponse<T> : IResponse
     {
         T Data { get; }
+    }
+
+    public interface IResponse
+    {
         bool Sucess { get; }
-        List<Exception> Exceptions { get; }
-        List<string> Messages { get; }
+        IEnumerable<ErrorResponse> Errors { get; set; }
     }
 }

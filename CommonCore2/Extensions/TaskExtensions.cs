@@ -28,10 +28,10 @@ namespace CommonCore2.Threading
                 skip += chunksize;
             }
 
-            while (queue.TryDequeue(out Task<IEnumerable<TReturnType>> res))
+            while (queue.TryDequeue(out Task<IEnumerable<TReturnType>> tasks))
             {
-                var listOfResults = await Task.WhenAny(res);
-                result.AddRange(listOfResults.Result);
+                var res = await tasks;
+                result.AddRange(res);
             }
 
             return result;
@@ -52,7 +52,8 @@ namespace CommonCore2.Threading
             }
             while (queue.TryDequeue(out Task<TReturnType> task))
             {
-                result.Add(task.Result);
+                var res = await task;
+                result.Add(res);
             }
             return result;
         }

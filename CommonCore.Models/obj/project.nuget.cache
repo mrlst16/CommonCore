@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "74UWVAajZ1yPXjLkKt+0yaHClXsH4G2s0QW0eEELWn4GjEaWUbCoE84V9IAO0zypS0wq6p32RFvaVZFAMX1o4w==",
+  "dgSpecHash": "6XHASsgM4IvIw9Y6uL3+BZlaYntDXW3yUYyM/46fn5/SDeaSx4mg/MADM4QaaiKcuPGb/izXYSjVl75S6S9nGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mattl\\.nuget\\packages\\mongodb.bson\\2.11.5\\mongodb.bson.2.11.5.nupkg.sha512"
+    "C:\\Users\\mattl\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\mattl\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

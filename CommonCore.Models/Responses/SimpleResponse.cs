@@ -1,21 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.Json.Serialization;
 
 namespace CommonCore.Models.Responses
 {
-    public class SimpleResponse<T>
-    {
-        public T Data { get; set; }
 
+    public class SimpleResponse : IResponse
+    {
         public bool Sucess { get; set; }
 
         public IEnumerable<ErrorResponse> Errors { get; set; }
 
-        [JsonIgnore]
         public string FailureMessage { get; set; }
-        [JsonIgnore]
         public string SuccessMessage { get; set; }
 
         private string _message = null;
@@ -35,5 +31,10 @@ namespace CommonCore.Models.Responses
             }
 
         }
+    }
+    public class SimpleResponse<T> :SimpleResponse, IResponse<T>
+    {
+        public T Data { get; set; }
+        
     }
 }
