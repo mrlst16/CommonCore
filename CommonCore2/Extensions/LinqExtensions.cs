@@ -35,6 +35,7 @@ namespace CommonCore2.Extensions
         public static bool Contains<T>(this IEnumerable<T> one, T value, Func<T, bool> expression)
             => one.Any(expression);
 
-        
+        public static IEnumerable<T> RangeBetween<T>(this IEnumerable<T> list, int start, int end)
+            => list.Skip(start).Take(list.Count() - end);
     }
 }

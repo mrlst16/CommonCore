@@ -9,7 +9,7 @@ namespace CommonCore.Models.Responses
     {
         public bool Sucess { get; set; }
 
-        public IEnumerable<ErrorResponse> Errors { get; set; }
+        public IList<ErrorResponse> Errors { get; set; }
 
         public string FailureMessage { get; set; }
         public string SuccessMessage { get; set; }

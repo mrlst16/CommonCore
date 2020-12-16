@@ -1,4 +1,8 @@
-﻿namespace CommonCore.Standard.Extensions
+﻿using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace CommonCore.Standard.Extensions
 {
     public static class StringExtensions
     {
@@ -44,5 +48,9 @@
             }
             return charsOpen == charsClosed;
         }
+
+        public static int MatchCount(this string str, string regex)
+            => Regex.Matches(str, regex)?.Count ?? 0;
+
     }
 }

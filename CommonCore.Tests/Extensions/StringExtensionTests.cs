@@ -44,5 +44,16 @@ namespace CommonCore.Tests.Extensions
             var result = input.Closes('{', '}');
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData(1, 2)]
+        public async Task MatchesCount_Theory(int dataSet, int expected)
+        {
+            string input = Data[dataSet];
+            var result = input.MatchCount("namespace");
+            Assert.Equal(expected, result);
+        }
+
+
     }
 }

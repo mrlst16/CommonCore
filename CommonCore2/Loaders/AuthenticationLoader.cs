@@ -56,7 +56,7 @@ namespace CommonCore2.Loaders
 
             await _passwordsRepository.Create(record);
 
-            return new MethodRespsonse()
+            return new MethodResponse()
             {
                 Sucess = true,
                 Errors = new List<ErrorResponse>()

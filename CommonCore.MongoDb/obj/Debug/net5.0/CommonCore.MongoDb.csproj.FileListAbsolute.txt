@@ -1,0 +1,12 @@
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\bin\Debug\net5.0\CommonCore.MongoDb.deps.json
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\bin\Debug\net5.0\CommonCore.MongoDb.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\bin\Debug\net5.0\ref\CommonCore.MongoDb.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\bin\Debug\net5.0\CommonCore.MongoDb.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.csprojAssemblyReference.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.AssemblyInfoInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.AssemblyInfo.cs
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.csproj.CoreCompileInputs.cache
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\ref\CommonCore.MongoDb.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore.MongoDb\obj\Debug\net5.0\CommonCore.MongoDb.pdb

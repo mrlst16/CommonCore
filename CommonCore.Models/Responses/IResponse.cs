@@ -14,6 +14,6 @@ namespace CommonCore.Models.Responses
     public interface IResponse
     {
         bool Sucess { get; }
-        IEnumerable<ErrorResponse> Errors { get; set; }
+        IList<ErrorResponse> Errors { get; set; }
     }
 }

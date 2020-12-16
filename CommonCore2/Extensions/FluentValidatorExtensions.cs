@@ -14,7 +14,8 @@ namespace CommonCore2.Extensions
                 {
                     Message = x.ErrorMessage,
                     ErrorCode = x.ErrorCode
-                }),
+                })
+                .ToList(),
                 Sucess = false,
                 Data = default(T)
             };

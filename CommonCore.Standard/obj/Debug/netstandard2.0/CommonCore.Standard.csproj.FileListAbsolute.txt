@@ -1,9 +1,9 @@
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\bin\Debug\netstandard2.0\CommonCore.Standard.deps.json
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\bin\Debug\netstandard2.0\CommonCore.Standard.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\bin\Debug\netstandard2.0\CommonCore.Standard.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.csprojAssemblyReference.cache
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.AssemblyInfoInputs.cache
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.AssemblyInfo.cs
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.csproj.CoreCompileInputs.cache
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.pdb
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Standard\obj\Debug\netstandard2.0\CommonCore.Standard.csprojAssemblyReference.cache
