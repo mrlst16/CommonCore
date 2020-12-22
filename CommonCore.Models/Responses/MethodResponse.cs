@@ -8,6 +8,7 @@ namespace CommonCore.Models.Responses
         public T Data { get; set; }
 
         public static implicit operator bool(MethodResponse<T> response) => response.Sucess;
+        public static implicit operator T(MethodResponse<T> response)=> response.Data;
 
         public new MethodResponse<T> AddError(string errorMessage)
         {

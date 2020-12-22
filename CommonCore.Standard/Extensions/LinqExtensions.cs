@@ -39,8 +39,12 @@ namespace CommonCore.Standard.Extensions
         {
             var take = end - start + 1;
             var result = list.Skip(start).Take(take);
-
             return result;
         }
+
+        public static IEnumerable<T> Distinct<T, T2>(this IEnumerable<T> list, Func<T, T2> predicate)
+            => list.GroupBy(predicate)
+                .Select(x => x.FirstOrDefault());
+        
     }
 }

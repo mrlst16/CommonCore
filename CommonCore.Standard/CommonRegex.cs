@@ -10,6 +10,13 @@ namespace CommonCore.Standard
         public const string NAMESPACE_PATTERN = "namespace\\s+\\S+\\s+\\{";
         public const string NEXTWORD_PATTERN = "^\\s+\\S+";
 
-        public static Regex NamespaceRegex => new Regex(NAMESPACE_PATTERN);
+        public static Regex NamespaceRegex() => new Regex(NAMESPACE_PATTERN);
+        public static Regex UsingNamespaceRegex(string ns)
+        {
+            var pattern = $"using\\s+namespace\\s+{ns}\\s*;";
+            var result = new Regex(pattern);
+            return result;
+        }
+
     }
 }
