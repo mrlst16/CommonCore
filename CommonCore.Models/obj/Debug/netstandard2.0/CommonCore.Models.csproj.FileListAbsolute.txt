@@ -1,7 +1,6 @@
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\netstandard2.0\CommonCore.Models.deps.json
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\netstandard2.0\CommonCore.Models.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\bin\Debug\netstandard2.0\CommonCore.Models.pdb
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.csprojAssemblyReference.cache
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.AssemblyInfoInputs.cache
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.AssemblyInfo.cs
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.csproj.CoreCompileInputs.cache

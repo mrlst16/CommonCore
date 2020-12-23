@@ -13,7 +13,7 @@ namespace CommonCore.Standard
         public static Regex NamespaceRegex() => new Regex(NAMESPACE_PATTERN);
         public static Regex UsingNamespaceRegex(string ns)
         {
-            var pattern = $"using\\s+namespace\\s+{ns}\\s*;";
+            var pattern = $"using\\s+{ns}\\s*;";
             var result = new Regex(pattern);
             return result;
         }

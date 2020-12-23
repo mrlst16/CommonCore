@@ -5,50 +5,25 @@ using System.Text;
 
 namespace CommonCore.Math
 {
-    public class Variable : IEnumerable<Variable>
+    public class Variable
     {
         public string Name { get; set; }
         public double Value { get; set; }
 
-        public IEnumerator<Variable> GetEnumerator()
+        public Variable()
         {
-            return null;
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public Variable(
+            string name,
+            double value
+            )
         {
-            return GetEnumerator();
+            Name = name;
+            Value = value;
         }
 
-        public static implicit operator double(Variable variable)
-            => variable.Value;
-        public static implicit operator Variable(double number)
-            => new Variable()
-            {
-                Name = "unspecified",
-                Value = number
-            };
-    }
-
-    public class VariableEnumerator : IEnumerator<Variable>
-    {
-        public Variable Current => throw new NotImplementedException();
-
-        object IEnumerator.Current => throw new NotImplementedException();
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool MoveNext()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Reset()
-        {
-            throw new NotImplementedException();
-        }
+        public static implicit operator double(Variable variable) => variable.Value;
+        public static implicit operator Variable(double val) => new Variable("__unspecified_", val);
     }
 }

@@ -10,6 +10,8 @@ namespace CommonCore.Math
         public IList<IOperation> Children { get; set; } = new List<IOperation>();
         public IList<Variable> Variables { get; set; } = new List<Variable>();
 
-        public abstract Task<double> Evaluate();
+        public abstract Task<double> Evaluate(ISubstitutionProvider substitutionProvider);
+
+        public abstract Task<IOperation> Evaluate();
     }
 }

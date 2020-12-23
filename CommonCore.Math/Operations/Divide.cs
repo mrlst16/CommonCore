@@ -9,16 +9,21 @@ namespace CommonCore.Math.Operations
 {
     public class Divide : OperationBase
     {
-        public override async Task<double> Evaluate()
+        public async override Task<double> Evaluate(ISubstitutionProvider substitutionProvider)
         {
             var result = Variables.Select(x => x.Value).Quotient();
 
             Parallel.ForEach(Children, async (x) =>
             {
-                var evaluation = await x.Evaluate();
+                var evaluation = await x.Evaluate(substitutionProvider);
                 result *= evaluation;
             });
             return result;
+        }
+
+        public override Task<IOperation> Evaluate()
+        {
+            throw new NotImplementedException();
         }
     }
 }

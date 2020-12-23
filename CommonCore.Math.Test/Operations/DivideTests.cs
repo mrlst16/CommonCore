@@ -23,7 +23,12 @@ namespace CommonCore.Math.Test.Operations
                     two
                 }
             };
-            var result = await op.Evaluate();
+            var subProvider = new DictionarySubstitutionProvider(new Dictionary<string, double>()
+            {
+                { "__unspecified__", 1}
+            });
+
+            var result = await op.Evaluate(subProvider);
             Assert.Equal(expected, result);
         }
 
@@ -42,7 +47,12 @@ namespace CommonCore.Math.Test.Operations
                     three
                 }
             };
-            var result = await op.Evaluate();
+            var subProvider = new DictionarySubstitutionProvider(new Dictionary<string, double>()
+            {
+                { "__unspecified__", 1}
+            });
+
+            var result = await op.Evaluate(subProvider);
             Assert.Equal(expected, result);
         }
 

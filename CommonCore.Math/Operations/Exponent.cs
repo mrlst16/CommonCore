@@ -10,7 +10,11 @@ namespace CommonCore.Math.Operations
         public double Power { get; set; }
         public IOperation Operation { get; set; }
 
-        public async Task<double> Evaluate()
-            => System.Math.Pow(await Operation.Evaluate(), Power);
+        public async Task<IOperation> Evaluate()
+            => this;
+
+        public async Task<double> Evaluate(ISubstitutionProvider substitutionProvider)
+            => System.Math.Pow(await Operation.Evaluate(substitutionProvider), Power);
+
     }
 }

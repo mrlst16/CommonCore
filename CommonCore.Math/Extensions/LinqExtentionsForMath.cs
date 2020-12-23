@@ -9,7 +9,6 @@ namespace CommonCore.Math.Extensions
     {
         internal dynamic value;
 
-
         public static implicit operator Number(int val)
         {
             var result = new Number();
@@ -49,8 +48,6 @@ namespace CommonCore.Math.Extensions
 
         public static implicit operator float(Number number)
             => number.value;
-
-
 
         public static Number operator +(Number a, Number b)
         {
