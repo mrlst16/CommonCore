@@ -23,6 +23,7 @@ namespace CommonCore.Math.Test.Operations
             });
 
             var result = await op.Evaluate(subProvider);
+            Assert.Equal(16, result);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace CommonCore.Math.Operations
         public double Power { get; set; }
         public IOperation Operation { get; set; }
 
-        public async Task<IOperation> Evaluate()
+        public async Task<IOperation> Factor()
             => this;
 
         public async Task<double> Evaluate(ISubstitutionProvider substitutionProvider)

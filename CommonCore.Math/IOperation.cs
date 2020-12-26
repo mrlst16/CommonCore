@@ -4,7 +4,7 @@ namespace CommonCore.Math
 {
     public interface IOperation
     {
-        Task<IOperation> Evaluate();
+        Task<IOperation> Factor();
         Task<double> Evaluate(ISubstitutionProvider substitutionProvider);
     }
 }

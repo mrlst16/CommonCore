@@ -32,7 +32,7 @@ namespace CommonCore.Standard.Extensions
             return one;
         }
 
-        public static bool Contains<T>(this IEnumerable<T> one, T value, Func<T, bool> expression)
+        public static bool Contains<T>(this IEnumerable<T> one, Func<T, bool> expression)
             => one.Any(expression);
 
         public static IEnumerable<T> RangeBetweenInclusive<T>(this IEnumerable<T> list, int start, int end)

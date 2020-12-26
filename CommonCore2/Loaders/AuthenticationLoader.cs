@@ -2,6 +2,7 @@
 using CommonCore.Interfaces.Repository;
 using CommonCore.Models.Authentication;
 using CommonCore.Models.Responses;
+using CommonCore2.Extensions;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -21,16 +22,16 @@ namespace CommonCore2.Loaders
         private readonly ICrudRepository<PasswordRecord> _passwordsRepository;
 
         public AuthenticationLoader(
-            ICrudRepository<PasswordRecord> passwordsRepository
+            ICrudRepositoryFactory crudRepositoryFactory
             )
         {
-            _passwordsRepository = passwordsRepository;
+            _passwordsRepository = crudRepositoryFactory.Get<PasswordRecord>();
         }
 
         public AuthenticationLoader(
-            ICrudRepository<PasswordRecord> passwordsRepository,
+            ICrudRepositoryFactory crudRepositoryFactory,
             IConfiguration configuration
-            ) : this(passwordsRepository)
+            ) : this(crudRepositoryFactory)
         {
             var iterationsSettings = configuration.GetValue<int>("AppSettings:Authorization:Iterations");
             var saltLengthSettings = configuration.GetValue<int>("AppSettings:Authorization:SaltLength");
@@ -43,6 +44,11 @@ namespace CommonCore2.Loaders
 
         public async Task<IResponse> SetupPassword(PasswordRequest request)
         {
+            var existingRecord = await _passwordsRepository
+                .First(x => x.UserName == request.UserName);
+            if (existingRecord != null)
+                throw new Exception($"User {request.UserName} is already registered.");
+
             var (passwordHash, salt) = GenerateHash(request.Password, SaltLength, HashLength, Iterations);
 
             var record = new PasswordRecord()
@@ -53,6 +59,7 @@ namespace CommonCore2.Loaders
                 UserName = request.UserName,
                 HashLength = HashLength
             };
+
 
             await _passwordsRepository.Create(record);
 
@@ -111,8 +118,8 @@ namespace CommonCore2.Loaders
             }
 
             var requestHash = GenerateHash(request.Password, response.Data.Salt, response.Data.HashLength, response.Data.Iterations);
-            response.Sucess = requestHash == response.Data.PasswordHash;
-            
+            response.Sucess = requestHash.BytesEqual(response.Data.PasswordHash);
+
             if (!response.Sucess)
             {
                 response.Data = null;

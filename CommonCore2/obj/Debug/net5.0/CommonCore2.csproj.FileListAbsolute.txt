@@ -15,3 +15,5 @@ C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\net5.0\CommonCore2.
 C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\net5.0\CommonCore2.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\net5.0\ref\CommonCore2.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore2\obj\Debug\net5.0\CommonCore2.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\bin\Debug\net5.0\CommonCore.Standard.dll
+C:\Users\mattl\source\repos\CommonCore\CommonCore2\bin\Debug\net5.0\CommonCore.Standard.pdb

@@ -106,6 +106,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -294,6 +298,9 @@
               },
               "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj": {
                 "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Models\\CommonCore.Models.csproj"
+              },
+              "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Standard\\CommonCore.Standard.csproj": {
+                "projectPath": "C:\\Users\\mattl\\source\\repos\\CommonCore\\CommonCore.Standard\\CommonCore.Standard.csproj"
               }
             }
           }

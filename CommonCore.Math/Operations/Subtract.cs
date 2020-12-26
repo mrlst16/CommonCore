@@ -20,7 +20,7 @@ namespace CommonCore.Math.Operations
             return result;
         }
 
-        public override Task<IOperation> Evaluate()
+        public override Task<IOperation> Factor()
         {
             throw new NotImplementedException();
         }

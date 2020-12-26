@@ -13,6 +13,7 @@ namespace CommonCore.Interfaces.Repository
         Task Create(T items);
         Task<IEnumerable<T>> Read(Expression<Func<T, bool>> filter);
         Task<IEnumerable<T>> Read(SearchRequest<T> searchRequest);
+        Task<T> First(Expression<Func<T, bool>> filter);
         Task<(bool, T)> Update(T item, Expression<Func<T, bool>> filter);
         Task<bool> Delete(Expression<Func<T, bool>> expression);
         Task<bool> DeleteBulk(Expression<Func<T, bool>> filter);

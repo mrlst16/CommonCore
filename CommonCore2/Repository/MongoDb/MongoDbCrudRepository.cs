@@ -3,6 +3,7 @@ using CommonCore.Models.Repo;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace CommonCore2.Repository.MongoDb
         private readonly IMongoClient _client;
         private readonly IMongoDatabase _database;
 
-        public MongoDbCrudRepository(string connectionString)
+        internal MongoDbCrudRepository(string connectionString)
         {
             _url = new MongoUrl(connectionString);
             _client = new MongoClient(_url);
@@ -74,6 +75,12 @@ namespace CommonCore2.Repository.MongoDb
             var collection = GetCollection<T>();
             var deleteResult = await collection.DeleteManyAsync<T>(filter);
             return deleteResult.IsAcknowledged;
+        }
+
+        public async Task<T> First(Expression<Func<T, bool>> filter)
+        {
+            var resultSet = await Read(filter);
+            return resultSet.AsEnumerable().FirstOrDefault();
         }
     }
 }

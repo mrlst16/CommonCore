@@ -6,8 +6,8 @@ namespace CommonCore2.Extensions
 {
     public static class FluentValidatorExtensions
     {
-        public static SimpleResponse<T> To400<T>(this ValidationResult validator)
-            => new SimpleResponse<T>()
+        public static ApiResponse<T> To400<T>(this ValidationResult validator)
+            => new ApiResponse<T>()
             {
                 FailureMessage = "Failed to validate request",
                 Errors = validator.Errors.Select(x => new ErrorResponse()

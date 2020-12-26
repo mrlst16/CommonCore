@@ -6,3 +6,4 @@ C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.csproj.CoreCompileInputs.cache
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.dll
 C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.pdb
+C:\Users\mattl\source\repos\CommonCore\CommonCore.Models\obj\Debug\netstandard2.0\CommonCore.Models.csprojAssemblyReference.cache

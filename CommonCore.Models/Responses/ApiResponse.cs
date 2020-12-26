@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace CommonCore.Models.Responses
 {
 
-    public class SimpleResponse : IResponse
+    public class ApiResponse<T> : IResponse<T>
     {
+        public T Data { get; set; }
+
         public bool Sucess { get; set; }
 
         public IList<ErrorResponse> Errors { get; set; }
 
-        public string FailureMessage { get; set; }
-        public string SuccessMessage { get; set; }
+        public string FailureMessage { protected get; set; }
+        public string SuccessMessage { protected get; set; }
 
         private string _message = null;
         public string Message
@@ -24,17 +24,6 @@ namespace CommonCore.Models.Responses
 
                 return Sucess ? SuccessMessage : FailureMessage;
             }
-
-            set
-            {
-                _message = value;
-            }
-
         }
-    }
-    public class SimpleResponse<T> :SimpleResponse, IResponse<T>
-    {
-        public T Data { get; set; }
-        
     }
 }

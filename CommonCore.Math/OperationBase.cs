@@ -12,6 +12,6 @@ namespace CommonCore.Math
 
         public abstract Task<double> Evaluate(ISubstitutionProvider substitutionProvider);
 
-        public abstract Task<IOperation> Evaluate();
+        public abstract Task<IOperation> Factor();
     }
 }
