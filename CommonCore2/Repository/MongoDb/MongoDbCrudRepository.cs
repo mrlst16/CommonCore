@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonCore2.Repository.MongoDb
@@ -23,7 +22,7 @@ namespace CommonCore2.Repository.MongoDb
             _database = _client.GetDatabase(_url.DatabaseName);
         }
 
-        private IMongoCollection<T> GetCollection<T>()
+        public IMongoCollection<T> GetCollection<T>()
             => _database.GetCollection<T>(typeof(T).Name);
 
         public async Task Create(T item)

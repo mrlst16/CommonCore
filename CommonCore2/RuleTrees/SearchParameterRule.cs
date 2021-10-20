@@ -1,7 +1,4 @@
-﻿using CommonCore.Interfaces.RuleTrees;
-using System.Threading.Tasks;
-
-namespace CommonCore2.RuleTrees
+﻿namespace CommonCore2.RuleTrees
 {
     public abstract class SearchParameterRule : RuleNode
     {

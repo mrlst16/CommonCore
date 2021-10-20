@@ -1,5 +1,4 @@
 ﻿using CommonCore.Models.Enums;
-using System.Threading.Tasks;
 
 namespace CommonCore2.RuleTrees.Comparison
 {

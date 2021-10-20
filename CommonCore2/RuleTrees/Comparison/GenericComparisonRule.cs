@@ -1,8 +1,6 @@
 ﻿using CommonCore.Models.Enums;
 using CommonCore.Models.Extensions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonCore2.RuleTrees.Comparison

@@ -1,9 +1,0 @@
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\bin\Debug\netcoreapp3.1\CommonCore.Math.deps.json
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\bin\Debug\netcoreapp3.1\CommonCore.Math.dll
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\bin\Debug\netcoreapp3.1\CommonCore.Math.pdb
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\obj\Debug\netcoreapp3.1\CommonCore.Math.csprojAssemblyReference.cache
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\obj\Debug\netcoreapp3.1\CommonCore.Math.AssemblyInfoInputs.cache
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\obj\Debug\netcoreapp3.1\CommonCore.Math.AssemblyInfo.cs
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\obj\Debug\netcoreapp3.1\CommonCore.Math.csproj.CoreCompileInputs.cache
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\obj\Debug\netcoreapp3.1\CommonCore.Math.dll
-C:\Users\mattl\source\repos\CommonCore\CommonCore.Math\obj\Debug\netcoreapp3.1\CommonCore.Math.pdb

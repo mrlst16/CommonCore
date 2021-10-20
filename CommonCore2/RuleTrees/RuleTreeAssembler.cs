@@ -1,8 +1,5 @@
 ﻿using CommonCore.Interfaces.RuleTrees;
-using CommonCore2.RuleTrees.Comparison;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonCore2.RuleTrees
@@ -26,10 +23,10 @@ namespace CommonCore2.RuleTrees
 
         private async Task Assemble(IEnumerable<IRuleNode> children)
         {
-            
+
             foreach (var child in children)
             {
-                if(child is SearchParameterRule rule)
+                if (child is SearchParameterRule rule)
                 {
                     rule.ParentID = child.ID;
                     rule.ComparisonValue = await _ruleTreeValueProvider.GetValue(rule.Key);

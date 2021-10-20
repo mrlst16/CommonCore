@@ -10,7 +10,6 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using CommonCore.Standard.Extensions;
 
 namespace CommonCore2.Loaders
 {
@@ -31,7 +30,7 @@ namespace CommonCore2.Loaders
         {
             if (record.Claims == null)
                 record.Claims = new List<Claim>();
-            if (!record.Claims.Contains(x => x.Type == ClaimTypes.Name))
+            if (record.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name) == null)
                 record.Claims.Add(new Claim(ClaimTypes.Name, record.UserName));
 
             var result = new MethodResponse<string>()

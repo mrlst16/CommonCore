@@ -20,7 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CommonCore.Interfaces\CommonCore.Interfaces.csproj" />
     <ProjectReference Include="..\CommonCore.Models\CommonCore.Models.csproj" />
-    <ProjectReference Include="..\CommonCore.Standard\CommonCore.Standard.csproj" />
   </ItemGroup>
 
   <ItemGroup>

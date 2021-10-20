@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CommonCore.Models.Responses
+﻿namespace CommonCore.Models.Responses
 {
     public class ErrorResponse
     {

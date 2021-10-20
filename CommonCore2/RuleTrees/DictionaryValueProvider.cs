@@ -1,7 +1,5 @@
 ﻿using CommonCore.Interfaces.RuleTrees;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CommonCore2.RuleTrees
