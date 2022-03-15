@@ -30,7 +30,7 @@ namespace CommonCore.Tests.Extensions
         public async Task IndexOfClosingCharacter_Theory_StartAtNext_IndexEquals(int dataSet, int startAt, int expectedIndex)
         {
             string input = Data[dataSet];
-            var result = input.IndexOfClosingCharacter('{', '}', startAt);
+            int result = input.IndexOfClosingCharacter('{', '}', startAt);
             Assert.Equal(expectedIndex, result);
         }
 

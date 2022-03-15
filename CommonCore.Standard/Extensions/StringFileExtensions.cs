@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace CommonCore.Standard.Extensions
 {
@@ -39,11 +38,11 @@ namespace CommonCore.Standard.Extensions
             return result;
         }
 
-        public static int IndexOfToShallowestFolder(this string path, string folder, out List<string> parts)
-        {
-            parts = path.Split(Path.DirectorySeparatorChar).ToList();
-            return parts.IndexOf(folder);
-        }
+        //public static int IndexOfToShallowestFolder(this string path, string folder, out List<string> parts)
+        //{
+        //    parts = path.Split(Path.DirectorySeparatorChar).ToList();
+        //    return parts.IndexOf(folder);
+        //}
 
         public static string PathBetweenFoldersToDeepestOccurrances(this string path, string startFolder, string endFolder)
         {
@@ -55,12 +54,12 @@ namespace CommonCore.Standard.Extensions
             return Path.Combine(resultParts.ToArray());
         }
 
-        public static string PathToShallowestFolder(this string path, string folder)
-        {
-            var index = path.IndexOfToShallowestFolder(folder, out List<string> parts);
-            parts = parts.RangeBetweenInclusive(0, index).ToList();
-            return Path.Combine(parts.ToArray());
-        }
+        //public static string PathToShallowestFolder(this string path, string folder)
+        //{
+        //    var index = path.IndexOfToShallowestFolder(folder, out List<string> parts);
+        //    parts = parts.RangeBetweenInclusive(0, index).ToList();
+        //    return Path.Combine(parts.ToArray());
+        //}
 
         public static string ParentFolderPath(this string path)
         {
@@ -71,37 +70,37 @@ namespace CommonCore.Standard.Extensions
             return Path.Combine(resultParts.ToArray());
         }
 
-        public static string ParentFolderName(this string path)
-        {
-            IEnumerable<string> parts = path.Split(Path.DirectorySeparatorChar);
-            if (parts.Count() < 2) return null;
+        //public static string ParentFolderName(this string path)
+        //{
+        //    IEnumerable<string> parts = path.Split(Path.DirectorySeparatorChar);
+        //    if (parts.Count() < 2) return null;
 
-            parts = parts.Reverse();
-            return parts.ElementAt(1);
-        }
+        //    parts = parts.Reverse();
+        //    return parts.ElementAt(1);
+        //}
 
-        public static string Filename(this string path)
-        {
-            IEnumerable<string> parts = path.Split(Path.DirectorySeparatorChar);
-            var fileName = parts.LastOrDefault();
-            if (string.IsNullOrWhiteSpace(fileName)) return null;
+        //public static string Filename(this string path)
+        //{
+        //    IEnumerable<string> parts = path.Split(Path.DirectorySeparatorChar);
+        //    var fileName = parts.LastOrDefault();
+        //    if (string.IsNullOrWhiteSpace(fileName)) return null;
 
-            var fileParts = fileName.Split('.');
-            if (fileParts.Length < 2) return null;
+        //    var fileParts = fileName.Split('.');
+        //    if (fileParts.Length < 2) return null;
 
-            return fileParts.FirstOrDefault();
-        }
+        //    return fileParts.FirstOrDefault();
+        //}
 
-        public static string FolderName(this string path)
-        {
-            if (string.IsNullOrWhiteSpace(path)) return null;
+        //public static string FolderName(this string path)
+        //{
+        //    if (string.IsNullOrWhiteSpace(path)) return null;
 
-            IEnumerable<string> parts = path.Split(Path.DirectorySeparatorChar);
-            if (parts.Count() < 1) return null;
-            var name = parts.LastOrDefault();
-            var nameParts = name.Split('.');
+        //    IEnumerable<string> parts = path.Split(Path.DirectorySeparatorChar);
+        //    if (parts.Count() < 1) return null;
+        //    var name = parts.LastOrDefault();
+        //    var nameParts = name.Split('.');
 
-            return nameParts.ElementAt(0);
-        }
+        //    return nameParts.ElementAt(0);
+        //}
     }
 }

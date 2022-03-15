@@ -55,15 +55,15 @@ namespace CommonCore.Tests.Extensions
         }
 
 
-        [Theory]
-        [InlineData(@"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2", "C:", "C:")]
-        [InlineData(@"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2", "two2", @"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2")]
-        [InlineData(@"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2", "one", @"C:\Program Files\Microsoft Office 15\ClientX64\one")]
-        public async Task PathToShallowestFolder_Theory(string input, string folder, string expected)
-        {
-            var result = input.PathToShallowestFolder(folder);
-            Assert.Equal(expected, result);
-        }
+        //[Theory]
+        //[InlineData(@"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2", "C:", "C:")]
+        //[InlineData(@"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2", "two2", @"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2")]
+        //[InlineData(@"C:\Program Files\Microsoft Office 15\ClientX64\one\two1\one\two2", "one", @"C:\Program Files\Microsoft Office 15\ClientX64\one")]
+        //public async Task PathToShallowestFolder_Theory(string input, string folder, string expected)
+        //{
+        //    var result = input.PathToShallowestFolder(folder);
+        //    Assert.Equal(expected, result);
+        //}
 
         [Theory]
         [InlineData("", null)]
