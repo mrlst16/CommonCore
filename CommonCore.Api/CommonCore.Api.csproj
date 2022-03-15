@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;Run Web UI and APIs</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -21,5 +21,8 @@ namespace CommonCore2
 
         public int GetHashCode([DisallowNull] T obj)
             => obj.GetHashCode();
+
+        public static implicit operator FuncComparer<T>(Func<T?, T?, bool> expression)
+            => new FuncComparer<T>(expression);
     }
 }

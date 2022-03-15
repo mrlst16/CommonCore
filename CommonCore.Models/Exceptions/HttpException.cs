@@ -1,6 +1,4 @@
-﻿using CommonCore.Models.Responses;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace CommonCore.Models.Exceptions
 {

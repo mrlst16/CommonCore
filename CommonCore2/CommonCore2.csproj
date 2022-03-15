@@ -2,7 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;Run Web UI and APIs</Configurations>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Threading\**" />
+    <EmbeddedResource Remove="Threading\**" />
+    <None Remove="Threading\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Extensions\LinqExtensions.cs" />
@@ -11,19 +18,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0" />
-    <PackageReference Include="MongoDB.Driver" Version="2.11.4" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.16.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CommonCore.Interfaces\CommonCore.Interfaces.csproj" />
     <ProjectReference Include="..\CommonCore.Models\CommonCore.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Threading\" />
   </ItemGroup>
 
 </Project>
